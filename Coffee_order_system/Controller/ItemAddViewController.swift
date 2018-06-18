@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ItemOderViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ItemAddViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
     
 
@@ -42,4 +42,13 @@ class ItemOderViewController: UIViewController,UITableViewDelegate,UITableViewDa
         return cell
     }
 
+}
+
+extension ItemAddViewController:orderDrinkDelegate{
+    func manager(_ manager: ItemsViewController, getOrder orderArray: [Items]) {
+        <#code#>
+    }
+    
+    
+    
 }
