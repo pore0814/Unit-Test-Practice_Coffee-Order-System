@@ -10,9 +10,9 @@ import UIKit
 import SDWebImage
 
 
-protocol orderDrinkDelegate:class {
+protocol addItemsDelegate:class {
     
-    func manager(_ manager:ItemsViewController , getOrder orderArray:[Items])
+    func manager(_ manager:ItemsViewController , getItems orderArray:[Items])
     
 }
 
@@ -20,11 +20,13 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
     
     var itemsManager = ItemManager()
     
-    weak var delegate: orderDrinkDelegate?
+    weak var delegate: addItemsDelegate?
     
     var itemsArray = [Items]()
     
     var orderArray = [Items]()
+    
+    @IBOutlet weak var containView: UIView!
     
     @IBOutlet weak var itemCollectionView: UICollectionView!
     
@@ -47,6 +49,12 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
             
         })
     }
+    
+    
+    
+    
+    
+    
     
     func configurecollectionview(){
         let nib = UINib(nibName: "ItemsCollectionViewCell", bundle: nil)
@@ -104,7 +112,7 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
         
         orderArray.append(itemsArray[sender.tag])
         
-        self.delegate?.manager(self, getOrder: orderArray)
+        self.delegate?.manager(self, getItems: orderArray)
         
     }
     

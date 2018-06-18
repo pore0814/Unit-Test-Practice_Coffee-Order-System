@@ -8,14 +8,12 @@
 
 import UIKit
 
-protocol orderDelegate: class {
-   func orderCafe()
-}
+
 
 
 class ItemsCollectionViewCell: UICollectionViewCell {
     
-    weak var delegate:orderDelegate?
+   
 
     @IBOutlet weak var itemImageBtn: UIButton!
     
@@ -24,6 +22,7 @@ class ItemsCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var itemNameLabel: UILabel!
     
     override func awakeFromNib() {
+        
         super.awakeFromNib()
 
     }

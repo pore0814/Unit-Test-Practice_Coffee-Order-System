@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="8ak-Hj-r6w">
             <objects>
                 <viewController id="yGo-hr-gAz" sceneMemberID="viewController">
@@ -20,16 +20,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Djv-l6-CI3"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="jvC-NF-GXn"/>
+                    <tabBarItem key="tabBarItem" title="" image="clipboards" id="jvC-NF-GXn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Khc-Vf-zaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-626" y="536"/>
         </scene>
-        <!--Item 1-->
+        <!--Items View Controller-->
         <scene sceneID="NOz-oc-X8w">
             <objects>
-                <viewController id="GYj-T0-0MP" customClass="ItemsViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ItemsViewController" id="GYj-T0-0MP" customClass="ItemsViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vze-zp-PUp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -87,8 +87,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ydh-Ma-ODb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="WSZ-sn-545"/>
+                    <tabBarItem key="tabBarItem" title="" image="shopping-cart" id="WSZ-sn-545"/>
                     <connections>
+                        <outlet property="containView" destination="6j2-WJ-Nou" id="hbO-hN-2hE"/>
                         <outlet property="itemCollectionView" destination="OMO-C2-8jT" id="4x3-zQ-AgL"/>
                     </connections>
                 </viewController>
@@ -114,10 +115,10 @@
             </objects>
             <point key="canvasLocation" x="-2302" y="256"/>
         </scene>
-        <!--Item Oder View Controller-->
+        <!--Item Add View Controller-->
         <scene sceneID="RQw-wJ-dBs">
             <objects>
-                <viewController id="m45-hM-LNd" customClass="ItemOderViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="m45-hM-LNd" customClass="ItemAddViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LNl-nG-duD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="354"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -145,4 +146,8 @@
             <point key="canvasLocation" x="-1298.4000000000001" y="67.466266866566727"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clipboards" width="24" height="24"/>
+        <image name="shopping-cart" width="24" height="24"/>
+    </resources>
 </document>
