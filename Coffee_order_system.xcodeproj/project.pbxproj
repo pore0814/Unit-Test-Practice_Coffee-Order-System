@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1A9EB8520D7521D00207094 /* FireBaseConnect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9EB8420D7521D00207094 /* FireBaseConnect.swift */; };
+		D1A9EB8720D7541D00207094 /* ItemsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9EB8620D7541D00207094 /* ItemsManager.swift */; };
+		D1A9EB8A20D7555500207094 /* MenueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9EB8920D7555500207094 /* MenueViewController.swift */; };
+		D1A9EB8C20D755EF00207094 /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9EB8B20D755EF00207094 /* Struct.swift */; };
+		D1EFF45E20D7451500C19095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFF45D20D7451500C19095 /* AppDelegate.swift */; };
+		D1EFF46020D7451500C19095 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFF45F20D7451500C19095 /* ViewController.swift */; };
+		D1EFF46320D7451500C19095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF46120D7451500C19095 /* Main.storyboard */; };
+		D1EFF46520D7451600C19095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF46420D7451600C19095 /* Assets.xcassets */; };
+		D1EFF46820D7451600C19095 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF46620D7451600C19095 /* LaunchScreen.storyboard */; };
+		D1EFF47020D748E300C19095 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF46F20D748E300C19095 /* GoogleService-Info.plist */; };
+		D1EFF47C20D74BDD00C19095 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFF47A20D74BDD00C19095 /* MenuTableViewCell.swift */; };
+		D1EFF47D20D74BDD00C19095 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF47B20D74BDD00C19095 /* MenuTableViewCell.xib */; };
+		D1EFF48020D74BED00C19095 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFF47E20D74BED00C19095 /* OrderTableViewCell.swift */; };
+		D1EFF48120D74BED00C19095 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF47F20D74BED00C19095 /* OrderTableViewCell.xib */; };
+		F11404B03EACB892E8EC27B7 /* Pods_Coffee_order_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25A37A30CCE15567981C611E /* Pods_Coffee_order_system.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		25A37A30CCE15567981C611E /* Pods_Coffee_order_system.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Coffee_order_system.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477125630FE45EB2ED9D199F /* Pods-Coffee_order_system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee_order_system.release.xcconfig"; path = "Pods/Target Support Files/Pods-Coffee_order_system/Pods-Coffee_order_system.release.xcconfig"; sourceTree = "<group>"; };
+		52C2219E984BF90E07558CC9 /* Pods-Coffee_order_system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Coffee_order_system.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Coffee_order_system/Pods-Coffee_order_system.debug.xcconfig"; sourceTree = "<group>"; };
+		D1A9EB8420D7521D00207094 /* FireBaseConnect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseConnect.swift; sourceTree = "<group>"; };
+		D1A9EB8620D7541D00207094 /* ItemsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsManager.swift; sourceTree = "<group>"; };
+		D1A9EB8920D7555500207094 /* MenueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenueViewController.swift; sourceTree = "<group>"; };
+		D1A9EB8B20D755EF00207094 /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
+		D1EFF45A20D7451500C19095 /* Coffee_order_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffee_order_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1EFF45D20D7451500C19095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1EFF45F20D7451500C19095 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D1EFF46220D7451500C19095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1EFF46420D7451600C19095 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1EFF46720D7451600C19095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1EFF46920D7451600C19095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EFF46F20D748E300C19095 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D1EFF47A20D74BDD00C19095 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		D1EFF47B20D74BDD00C19095 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		D1EFF47E20D74BED00C19095 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		D1EFF47F20D74BED00C19095 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1EFF45720D7451500C19095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F11404B03EACB892E8EC27B7 /* Pods_Coffee_order_system.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6410956B726CC64870EE5703 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52C2219E984BF90E07558CC9 /* Pods-Coffee_order_system.debug.xcconfig */,
+				477125630FE45EB2ED9D199F /* Pods-Coffee_order_system.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A6303F6BA053522FBF71A8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25A37A30CCE15567981C611E /* Pods_Coffee_order_system.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1A9EB8320D7520600207094 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9EB8420D7521D00207094 /* FireBaseConnect.swift */,
+				D1A9EB8620D7541D00207094 /* ItemsManager.swift */,
+				D1A9EB8B20D755EF00207094 /* Struct.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D1A9EB8820D7553900207094 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9EB8920D7555500207094 /* MenueViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D1EFF45120D7451400C19095 = {
+			isa = PBXGroup;
+			children = (
+				D1EFF45C20D7451500C19095 /* Coffee_order_system */,
+				D1EFF45B20D7451500C19095 /* Products */,
+				6410956B726CC64870EE5703 /* Pods */,
+				8A6303F6BA053522FBF71A8E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1EFF45B20D7451500C19095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFF45A20D7451500C19095 /* Coffee_order_system.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1EFF45C20D7451500C19095 /* Coffee_order_system */ = {
+			isa = PBXGroup;
+			children = (
+				D1A9EB8820D7553900207094 /* Controller */,
+				D1A9EB8320D7520600207094 /* Model */,
+				D1EFF47120D74B6D00C19095 /* View */,
+				D1EFF45D20D7451500C19095 /* AppDelegate.swift */,
+				D1EFF45F20D7451500C19095 /* ViewController.swift */,
+				D1EFF46120D7451500C19095 /* Main.storyboard */,
+				D1EFF46420D7451600C19095 /* Assets.xcassets */,
+				D1EFF46620D7451600C19095 /* LaunchScreen.storyboard */,
+				D1EFF46F20D748E300C19095 /* GoogleService-Info.plist */,
+				D1EFF46920D7451600C19095 /* Info.plist */,
+			);
+			path = Coffee_order_system;
+			sourceTree = "<group>";
+		};
+		D1EFF47120D74B6D00C19095 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFF47A20D74BDD00C19095 /* MenuTableViewCell.swift */,
+				D1EFF47B20D74BDD00C19095 /* MenuTableViewCell.xib */,
+				D1EFF47E20D74BED00C19095 /* OrderTableViewCell.swift */,
+				D1EFF47F20D74BED00C19095 /* OrderTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1EFF45920D7451500C19095 /* Coffee_order_system */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1EFF46C20D7451600C19095 /* Build configuration list for PBXNativeTarget "Coffee_order_system" */;
+			buildPhases = (
+				67FED6E98AC8A83945D578F4 /* [CP] Check Pods Manifest.lock */,
+				D1EFF45620D7451500C19095 /* Sources */,
+				D1EFF45720D7451500C19095 /* Frameworks */,
+				D1EFF45820D7451500C19095 /* Resources */,
+				26927B67AA22C794DDC88383 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Coffee_order_system;
+			productName = Coffee_order_system;
+			productReference = D1EFF45A20D7451500C19095 /* Coffee_order_system.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1EFF45220D7451400C19095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = Annie;
+				TargetAttributes = {
+					D1EFF45920D7451500C19095 = {
+						CreatedOnToolsVersion = 9.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D1EFF45520D7451400C19095 /* Build configuration list for PBXProject "Coffee_order_system" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1EFF45120D7451400C19095;
+			productRefGroup = D1EFF45B20D7451500C19095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1EFF45920D7451500C19095 /* Coffee_order_system */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1EFF45820D7451500C19095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1EFF48120D74BED00C19095 /* OrderTableViewCell.xib in Resources */,
+				D1EFF46820D7451600C19095 /* LaunchScreen.storyboard in Resources */,
+				D1EFF47020D748E300C19095 /* GoogleService-Info.plist in Resources */,
+				D1EFF46520D7451600C19095 /* Assets.xcassets in Resources */,
+				D1EFF47D20D74BDD00C19095 /* MenuTableViewCell.xib in Resources */,
+				D1EFF46320D7451500C19095 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26927B67AA22C794DDC88383 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Coffee_order_system/Pods-Coffee_order_system-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CodableFirebase/CodableFirebase.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CodableFirebase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Coffee_order_system/Pods-Coffee_order_system-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67FED6E98AC8A83945D578F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Coffee_order_system-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1EFF45620D7451500C19095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1A9EB8720D7541D00207094 /* ItemsManager.swift in Sources */,
+				D1EFF46020D7451500C19095 /* ViewController.swift in Sources */,
+				D1A9EB8520D7521D00207094 /* FireBaseConnect.swift in Sources */,
+				D1EFF45E20D7451500C19095 /* AppDelegate.swift in Sources */,
+				D1A9EB8C20D755EF00207094 /* Struct.swift in Sources */,
+				D1A9EB8A20D7555500207094 /* MenueViewController.swift in Sources */,
+				D1EFF48020D74BED00C19095 /* OrderTableViewCell.swift in Sources */,
+				D1EFF47C20D74BDD00C19095 /* MenuTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1EFF46120D7451500C19095 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EFF46220D7451500C19095 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1EFF46620D7451600C19095 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1EFF46720D7451600C19095 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1EFF46A20D7451600C19095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1EFF46B20D7451600C19095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1EFF46D20D7451600C19095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C2219E984BF90E07558CC9 /* Pods-Coffee_order_system.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Coffee_order_system/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annie.Coffee-order-system";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1EFF46E20D7451600C19095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 477125630FE45EB2ED9D199F /* Pods-Coffee_order_system.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Coffee_order_system/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.annie.Coffee-order-system";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1EFF45520D7451400C19095 /* Build configuration list for PBXProject "Coffee_order_system" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EFF46A20D7451600C19095 /* Debug */,
+				D1EFF46B20D7451600C19095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1EFF46C20D7451600C19095 /* Build configuration list for PBXNativeTarget "Coffee_order_system" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1EFF46D20D7451600C19095 /* Debug */,
+				D1EFF46E20D7451600C19095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1EFF45220D7451400C19095 /* Project object */;
+}
