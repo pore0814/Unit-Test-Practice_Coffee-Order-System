@@ -9,38 +9,67 @@
 import UIKit
 import SDWebImage
 
-class MenueViewController: UIViewController {
+class MenueViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource {
+    
+    
     
     var itemsManager = ItemManager()
-    
-    @IBOutlet weak var cafeBtn1: UIButton!
-    @IBOutlet weak var cafeBtn2: UIButton!
-    @IBOutlet weak var cafeBtn3: UIButton!
-    @IBOutlet weak var cafeBtn4: UIButton!
-    @IBOutlet weak var cafeBtn5: UIButton!
-    @IBOutlet weak var cafeBtn6: UIButton!
-    @IBOutlet weak var cafeBtn7: UIButton!
-    @IBOutlet weak var cafeBtn8: UIButton!
-    
+    var itemsArray = [Items]()
+    @IBOutlet weak var itemCollectionView: UICollectionView!
     
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        itemsManager.getItems(completion: {(itemsInfo:[Items]) in
-          
-           self.cafeBtn1.sd_setBackgroundImage(with: URL(string: itemsInfo[0].image), for: .normal, completed: nil)
-            self.cafeBtn2.sd_setBackgroundImage(with: URL(string: itemsInfo[1].image), for: .normal, completed: nil)
-            self.cafeBtn3.sd_setBackgroundImage(with: URL(string: itemsInfo[2].image), for: .normal, completed: nil)
-            self.cafeBtn4.sd_setBackgroundImage(with: URL(string: itemsInfo[3].image), for: .normal, completed: nil)
-            self.cafeBtn5.sd_setBackgroundImage(with: URL(string: itemsInfo[4].image), for: .normal, completed: nil)
-            self.cafeBtn6.sd_setBackgroundImage(with: URL(string: itemsInfo[5].image), for: .normal, completed: nil)
-            self.cafeBtn7.sd_setBackgroundImage(with: URL(string: itemsInfo[6].image), for: .normal, completed: nil)
-          
-            
+       
+        
+        configurecollectionview()
+        
+        
+        
+        itemsManager.getItems(completion: {[weak self](itemsInfo:[Items]) in
+            self?.itemsArray = itemsInfo
+            self?.itemCollectionView.reloadData()
             
             
         })
+    }
+    
+    func configurecollectionview(){
+        let nib = UINib(nibName: "ItemsCollectionViewCell", bundle: nil)
+        itemCollectionView.register(nib, forCellWithReuseIdentifier: "ItemsCollectionViewCell")
+        
+       itemCollectionView.delegate = self
+       itemCollectionView.dataSource = self
+        
+        let  fullScreenSize = UIScreen.main.bounds.size
+        
+        //CollectionView 間距設定
+        let layout = itemCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: fullScreenSize.width/4 - 10 , height:fullScreenSize.width/4 - 10)
+        layout.scrollDirection = .vertical //.horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 8, bottom: 0, right: 8)
+        layout.minimumLineSpacing = 2.0
+        layout.minimumInteritemSpacing = 2.0
+        itemCollectionView.setCollectionViewLayout(layout, animated: false)
+        
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return itemsArray.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemsCollectionViewCell", for: indexPath) as! ItemsCollectionViewCell
+        
+        cell.itemNameLabel.text = itemsArray[indexPath.row].name
+        cell.itemPriceLabel.text = String(itemsArray[indexPath.row].price)
+        cell.itemImageBtn.sd_setBackgroundImage(with:  URL(string: itemsArray[indexPath.row].image), for: .normal, completed: nil)
+     
+        
+        
+        return cell
     }
 
    

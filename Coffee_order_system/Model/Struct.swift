@@ -12,7 +12,7 @@ import Foundation
 struct Items:Codable {
     
     var image:String
-    var price:Double
+    var price:Int
     var name:String
     
 }
