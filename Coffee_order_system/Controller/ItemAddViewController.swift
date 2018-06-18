@@ -70,6 +70,7 @@ class ItemAddViewController: UIViewController,UITableViewDelegate,UITableViewDat
 }
 
 extension ItemAddViewController: addItemsDelegate{
+    
     func manager(_ manager: ItemsViewController, getItems orderArray: [Items]) {
         
         addItmesArray = orderArray

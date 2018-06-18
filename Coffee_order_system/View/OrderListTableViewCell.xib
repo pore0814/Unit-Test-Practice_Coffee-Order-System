@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OrderListTableViewCell" rowHeight="136" id="KGk-i7-Jjw" customClass="OrderListTableViewCell" customModule="Coffee_order_system" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c42-9Y-tO1">
+                        <rect key="frame" x="8" y="8" width="114" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="IGD-hk-t49"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder Time :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afq-oX-YoZ">
+                        <rect key="frame" x="8" y="36" width="90" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JB9-Oj-QBL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Account :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMz-XP-P7S">
+                        <rect key="frame" x="8" y="64" width="121" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bLJ-jJ-cwi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Items : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mi1-rK-kZM">
+                        <rect key="frame" x="8" y="104" width="97" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcy-gx-c4b">
+                        <rect key="frame" x="137" y="8" width="114" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Oder Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRr-5d-Ccl">
+                        <rect key="frame" x="105" y="36" width="129" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ili-iq-9zW">
+                        <rect key="frame" x="147" y="64" width="114" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fku-kn-X2y">
+                        <rect key="frame" x="121" y="104" width="17.5" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oder Number :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvF-PO-Rdb">
+                        <rect key="frame" x="353" y="8" width="114" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500 TWD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03Y-jR-kIe">
+                        <rect key="frame" x="383" y="104" width="84" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="84" id="pts-gG-pZF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKa-GY-fgU">
+                        <rect key="frame" x="289" y="104" width="90" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TMz-XP-P7S" firstAttribute="top" secondItem="afq-oX-YoZ" secondAttribute="bottom" constant="8" id="0pi-Wg-VAz"/>
+                    <constraint firstItem="IKa-GY-fgU" firstAttribute="firstBaseline" secondItem="03Y-jR-kIe" secondAttribute="firstBaseline" id="2mc-Vw-Z6H"/>
+                    <constraint firstItem="afq-oX-YoZ" firstAttribute="height" secondItem="c42-9Y-tO1" secondAttribute="height" id="4dT-xY-XM7"/>
+                    <constraint firstItem="xRr-5d-Ccl" firstAttribute="leading" secondItem="afq-oX-YoZ" secondAttribute="trailing" constant="7.5" id="5Rx-Di-dgT"/>
+                    <constraint firstItem="03Y-jR-kIe" firstAttribute="leading" secondItem="IKa-GY-fgU" secondAttribute="trailing" constant="4" id="6JX-BM-RL3"/>
+                    <constraint firstItem="ili-iq-9zW" firstAttribute="baseline" secondItem="TMz-XP-P7S" secondAttribute="baseline" id="76E-YX-A4x"/>
+                    <constraint firstItem="Hcy-gx-c4b" firstAttribute="top" secondItem="c42-9Y-tO1" secondAttribute="top" id="7iL-8d-4Eh"/>
+                    <constraint firstItem="xvF-PO-Rdb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="8nl-2A-lmj"/>
+                    <constraint firstAttribute="trailing" secondItem="03Y-jR-kIe" secondAttribute="trailing" id="HDl-BT-QeH"/>
+                    <constraint firstItem="Mi1-rK-kZM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="HPC-GL-YUc"/>
+                    <constraint firstItem="03Y-jR-kIe" firstAttribute="bottom" secondItem="fku-kn-X2y" secondAttribute="bottom" id="Otj-Br-7wt"/>
+                    <constraint firstItem="ili-iq-9zW" firstAttribute="leading" secondItem="TMz-XP-P7S" secondAttribute="trailing" constant="18" id="RPX-GL-npC"/>
+                    <constraint firstItem="c42-9Y-tO1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="S3p-dz-dkM"/>
+                    <constraint firstItem="c42-9Y-tO1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="VAH-Z5-0UW"/>
+                    <constraint firstItem="fku-kn-X2y" firstAttribute="leading" secondItem="Mi1-rK-kZM" secondAttribute="trailing" constant="16" id="aIK-ID-iAm"/>
+                    <constraint firstAttribute="bottom" secondItem="Mi1-rK-kZM" secondAttribute="bottom" constant="11.5" id="dAo-t5-hIk"/>
+                    <constraint firstItem="Mi1-rK-kZM" firstAttribute="top" secondItem="TMz-XP-P7S" secondAttribute="bottom" constant="20" id="gRd-R5-ym5"/>
+                    <constraint firstItem="TMz-XP-P7S" firstAttribute="height" secondItem="c42-9Y-tO1" secondAttribute="height" id="nI1-sD-gko"/>
+                    <constraint firstAttribute="trailing" secondItem="xvF-PO-Rdb" secondAttribute="trailing" id="ooC-aC-XQn"/>
+                    <constraint firstItem="afq-oX-YoZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qG6-Cc-jQI"/>
+                    <constraint firstItem="fku-kn-X2y" firstAttribute="baseline" secondItem="Mi1-rK-kZM" secondAttribute="baseline" id="tgV-aB-Hxs"/>
+                    <constraint firstItem="TMz-XP-P7S" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="tl8-qK-Lb3"/>
+                    <constraint firstItem="Hcy-gx-c4b" firstAttribute="leading" secondItem="c42-9Y-tO1" secondAttribute="trailing" constant="15.5" id="upc-ml-mzB"/>
+                    <constraint firstItem="afq-oX-YoZ" firstAttribute="top" secondItem="c42-9Y-tO1" secondAttribute="bottom" constant="8" id="x3s-cN-92S"/>
+                    <constraint firstItem="xRr-5d-Ccl" firstAttribute="baseline" secondItem="afq-oX-YoZ" secondAttribute="baseline" id="xd7-I7-Ar6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="orderAccountLabel" destination="ili-iq-9zW" id="90B-Wl-3Yd"/>
+                <outlet property="orderNumberLabel" destination="Hcy-gx-c4b" id="xfR-T0-773"/>
+                <outlet property="orderStatusLabel" destination="xvF-PO-Rdb" id="Oka-Hj-vGh"/>
+                <outlet property="orderTimeLabel" destination="xRr-5d-Ccl" id="RVr-Zr-cBS"/>
+                <outlet property="orderTotalItemsLabel" destination="fku-kn-X2y" id="uIz-eP-glX"/>
+                <outlet property="totalPriceLabel" destination="03Y-jR-kIe" id="NDD-fM-OPV"/>
+            </connections>
+            <point key="canvasLocation" x="147.5" y="57"/>
+        </tableViewCell>
+    </objects>
+</document>

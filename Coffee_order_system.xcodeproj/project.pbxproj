@@ -14,6 +14,11 @@
 		D1A9EB9120D767BA00207094 /* ItemsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9EB8F20D767BA00207094 /* ItemsCollectionViewCell.swift */; };
 		D1A9EB9220D767BA00207094 /* ItemsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1A9EB9020D767BA00207094 /* ItemsCollectionViewCell.xib */; };
 		D1A9EB9420D7721300207094 /* ItemAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A9EB9320D7721300207094 /* ItemAddViewController.swift */; };
+		D1E53F1C20D791A900BCF09C /* OderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E53F1B20D791A900BCF09C /* OderListViewController.swift */; };
+		D1E53F1F20D791F400BCF09C /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E53F1D20D791F400BCF09C /* OrderListTableViewCell.swift */; };
+		D1E53F2020D791F400BCF09C /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1E53F1E20D791F400BCF09C /* OrderListTableViewCell.xib */; };
+		D1E53F2220D7921B00BCF09C /* OrderListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E53F2120D7921B00BCF09C /* OrderListManager.swift */; };
+		D1E53F2420D79F1100BCF09C /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E53F2320D79F1100BCF09C /* Date.swift */; };
 		D1EFF45E20D7451500C19095 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFF45D20D7451500C19095 /* AppDelegate.swift */; };
 		D1EFF46320D7451500C19095 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF46120D7451500C19095 /* Main.storyboard */; };
 		D1EFF46520D7451600C19095 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1EFF46420D7451600C19095 /* Assets.xcassets */; };
@@ -35,6 +40,11 @@
 		D1A9EB8F20D767BA00207094 /* ItemsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsCollectionViewCell.swift; sourceTree = "<group>"; };
 		D1A9EB9020D767BA00207094 /* ItemsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemsCollectionViewCell.xib; sourceTree = "<group>"; };
 		D1A9EB9320D7721300207094 /* ItemAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemAddViewController.swift; sourceTree = "<group>"; };
+		D1E53F1B20D791A900BCF09C /* OderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OderListViewController.swift; sourceTree = "<group>"; };
+		D1E53F1D20D791F400BCF09C /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
+		D1E53F1E20D791F400BCF09C /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
+		D1E53F2120D7921B00BCF09C /* OrderListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListManager.swift; sourceTree = "<group>"; };
+		D1E53F2320D79F1100BCF09C /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		D1EFF45A20D7451500C19095 /* Coffee_order_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffee_order_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EFF45D20D7451500C19095 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1EFF46220D7451500C19095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,7 +90,9 @@
 			children = (
 				D1A9EB8420D7521D00207094 /* FireBaseConnect.swift */,
 				D1A9EB8620D7541D00207094 /* ItemsManager.swift */,
+				D1E53F2120D7921B00BCF09C /* OrderListManager.swift */,
 				D1A9EB8B20D755EF00207094 /* Struct.swift */,
+				D1E53F2320D79F1100BCF09C /* Date.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -90,6 +102,7 @@
 			children = (
 				D1A9EB9320D7721300207094 /* ItemAddViewController.swift */,
 				D1A9EB8920D7555500207094 /* ItemsViewController.swift */,
+				D1E53F1B20D791A900BCF09C /* OderListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +144,8 @@
 		D1EFF47120D74B6D00C19095 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D1E53F1D20D791F400BCF09C /* OrderListTableViewCell.swift */,
+				D1E53F1E20D791F400BCF09C /* OrderListTableViewCell.xib */,
 				D1EFF47E20D74BED00C19095 /* OrderTableViewCell.swift */,
 				D1EFF47F20D74BED00C19095 /* OrderTableViewCell.xib */,
 				D1A9EB8F20D767BA00207094 /* ItemsCollectionViewCell.swift */,
@@ -204,6 +219,7 @@
 				D1EFF47020D748E300C19095 /* GoogleService-Info.plist in Resources */,
 				D1EFF46520D7451600C19095 /* Assets.xcassets in Resources */,
 				D1A9EB9220D767BA00207094 /* ItemsCollectionViewCell.xib in Resources */,
+				D1E53F2020D791F400BCF09C /* OrderListTableViewCell.xib in Resources */,
 				D1EFF46320D7451500C19095 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,12 +280,16 @@
 			files = (
 				D1A9EB8720D7541D00207094 /* ItemsManager.swift in Sources */,
 				D1A9EB8520D7521D00207094 /* FireBaseConnect.swift in Sources */,
+				D1E53F1F20D791F400BCF09C /* OrderListTableViewCell.swift in Sources */,
 				D1EFF45E20D7451500C19095 /* AppDelegate.swift in Sources */,
 				D1A9EB8C20D755EF00207094 /* Struct.swift in Sources */,
 				D1A9EB9120D767BA00207094 /* ItemsCollectionViewCell.swift in Sources */,
 				D1A9EB8A20D7555500207094 /* ItemsViewController.swift in Sources */,
+				D1E53F2420D79F1100BCF09C /* Date.swift in Sources */,
 				D1A9EB9420D7721300207094 /* ItemAddViewController.swift in Sources */,
 				D1EFF48020D74BED00C19095 /* OrderTableViewCell.swift in Sources */,
+				D1E53F1C20D791A900BCF09C /* OderListViewController.swift in Sources */,
+				D1E53F2220D7921B00BCF09C /* OrderListManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

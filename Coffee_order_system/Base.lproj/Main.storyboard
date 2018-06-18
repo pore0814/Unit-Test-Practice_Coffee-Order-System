@@ -10,21 +10,36 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Oder List View Controller-->
         <scene sceneID="8ak-Hj-r6w">
             <objects>
-                <viewController id="yGo-hr-gAz" sceneMemberID="viewController">
+                <viewController id="yGo-hr-gAz" customClass="OderListViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="byg-eE-BQ2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-hH-LaZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mI7-hH-LaZ" firstAttribute="trailing" secondItem="Djv-l6-CI3" secondAttribute="trailing" id="21Z-58-d8f"/>
+                            <constraint firstItem="mI7-hH-LaZ" firstAttribute="top" secondItem="Djv-l6-CI3" secondAttribute="top" id="XvZ-y1-iDE"/>
+                            <constraint firstItem="mI7-hH-LaZ" firstAttribute="leading" secondItem="Djv-l6-CI3" secondAttribute="leading" id="wQ9-ZV-Lqu"/>
+                            <constraint firstItem="mI7-hH-LaZ" firstAttribute="bottom" secondItem="Djv-l6-CI3" secondAttribute="bottom" id="xLq-63-e0B"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Djv-l6-CI3"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="clipboards" id="jvC-NF-GXn"/>
+                    <connections>
+                        <outlet property="ordersTableView" destination="mI7-hH-LaZ" id="bEd-G5-Iwt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Khc-Vf-zaS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-626" y="536"/>
+            <point key="canvasLocation" x="-626.39999999999998" y="535.68215892053979"/>
         </scene>
         <!--Items View Controller-->
         <scene sceneID="NOz-oc-X8w">

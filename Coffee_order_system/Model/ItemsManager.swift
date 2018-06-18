@@ -11,7 +11,6 @@ import CodableFirebase
 
 class ItemManager{
     
-    
     func getItems(completion:@escaping([Items])->()){
         
         FireBaseConnect.databaseRef.child("items").observeSingleEvent(of: .value) { (snapshot) in
