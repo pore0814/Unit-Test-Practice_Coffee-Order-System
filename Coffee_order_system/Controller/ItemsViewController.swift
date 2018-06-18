@@ -39,7 +39,6 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
         configurecollectionview()
         
         
-        
         itemsManager.getItems(completion: {[weak self](itemsInfo:[Items]) in
             
             self?.itemsArray = itemsInfo
@@ -49,11 +48,6 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
             
         })
     }
-    
-    
-    
-    
-    
     
     
     func configurecollectionview(){
@@ -67,7 +61,7 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
         
         let  fullScreenSize = UIScreen.main.bounds.size
         
-        //CollectionView 間距設定
+//CollectionView 間距設定
         let layout = itemCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
         
         layout.itemSize = CGSize(width: fullScreenSize.width/4 - 10 , height:fullScreenSize.width/4 - 10)
@@ -96,7 +90,7 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemsCollectionViewCell", for: indexPath) as! ItemsCollectionViewCell
         
         //        cell.itemNameLabel.text = itemsArray[indexPath.row].name
-        //
+   
         //        cell.itemPriceLabel.text = String(itemsArray[indexPath.row].price)
         
         cell.itemImageBtn.sd_setBackgroundImage(with:  URL(string: itemsArray[indexPath.row].image), for: .normal, completed: nil)
@@ -115,6 +109,14 @@ class ItemsViewController: UIViewController,UICollectionViewDelegate,UICollectio
         self.delegate?.manager(self, getItems: orderArray)
         
     }
+    
+    @IBAction func confirmBtn(_ sender: Any) {
+        
+      orderArray.removeAll()
+        
+        self.delegate?.manager(self, getItems: orderArray)
+    }
+    
     
     
     
