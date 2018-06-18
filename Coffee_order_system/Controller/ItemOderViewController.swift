@@ -8,28 +8,38 @@
 
 import UIKit
 
-class ItemOderViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+class ItemOderViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+   
     
 
-    /*
-    // MARK: - Navigation
+    @IBOutlet weak var orderTableview: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        configureTableview()
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
+
+    func configureTableview(){
+    
+        let nib = UINib(nibName: "OrderTableViewCell", bundle: nil)
+        
+        orderTableview.register(nib, forCellReuseIdentifier: "OrderTableViewCell")
+        
+        orderTableview.dataSource = self
+        
+        orderTableview.delegate = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "OrderTableViewCell") as! OrderTableViewCell
+       
+        return cell
+    }
 
 }

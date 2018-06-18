@@ -8,17 +8,30 @@
 
 import UIKit
 
+protocol orderDelegate: class {
+   func orderCafe()
+}
+
+
 class ItemsCollectionViewCell: UICollectionViewCell {
+    
+    weak var delegate:orderDelegate?
 
     @IBOutlet weak var itemImageBtn: UIButton!
     
     @IBOutlet weak var itemPriceLabel: UILabel!
-    @IBOutlet weak var itemNameLabel: UILabel!
     
+    @IBOutlet weak var itemNameLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+
     }
+   
+    
+    @IBAction func itemImageBtn(_ sender: Any) {
+     
+    }
+    
 
 }

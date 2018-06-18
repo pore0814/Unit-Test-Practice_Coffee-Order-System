@@ -29,7 +29,7 @@
         <!--Item 1-->
         <scene sceneID="NOz-oc-X8w">
             <objects>
-                <viewController id="GYj-T0-0MP" customClass="MenueViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GYj-T0-0MP" customClass="ItemsViewController" customModule="Coffee_order_system" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vze-zp-PUp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,11 @@
                             <constraint firstAttribute="bottom" secondItem="BLK-OQ-wAg" secondAttribute="bottom" id="dUA-ud-5ms"/>
                             <constraint firstItem="BLK-OQ-wAg" firstAttribute="leading" secondItem="LNl-nG-duD" secondAttribute="leading" id="uH3-sh-YD9"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ahm-uB-gw5"/>
                     </view>
+                    <connections>
+                        <outlet property="orderTableview" destination="BLK-OQ-wAg" id="t8B-T2-i4w"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Vh-Z3-sKG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
